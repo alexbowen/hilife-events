@@ -1,0 +1,24 @@
+# Dependencies
+vendor/
+node_modules/
+
+# Secrets — never in git
+secrets/
+
+# Database files
+db/
+
+# Images — managed in WordPress
+assets/images/
+
+# Logs
+*.log
+logs/
+
+# Cache
+cache/
+tmp/
+
+# OS
+.DS_Store
+Thumbs.db
