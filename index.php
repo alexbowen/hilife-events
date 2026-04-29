@@ -1,6 +1,6 @@
 <?php
 require_once __DIR__ . '/bootstrap.php';
-define('ASSETS_URL', '/legacy/assets/production/');
+define('ASSETS_URL', '/events/assets/production/');
 session_start();
 // include(APP_ROOT . '/lib/common.php');
 include (APP_ROOT . '/lib/auth.php');

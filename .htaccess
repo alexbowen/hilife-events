@@ -2,19 +2,19 @@ RewriteEngine On
 
 RewriteRule ^index\.php$ - [L]
 
-# Route to legacy app
-RewriteRule ^account(/.*)?$ /legacy/index.php?page_name=account$1 [L,QSA]
-RewriteRule ^planner(/.*)?$ /legacy/index.php?auth=user&page_name=planner$1 [L,QSA]
-RewriteRule ^admin(/.*)?$ /legacy/index.php?auth=admin&page_name=admin$1 [L,QSA]
-RewriteRule ^auth/revoke$ /legacy/lib/auth/revoke.php [L,QSA]
-RewriteRule ^auth(/.*)?$ /legacy/lib/auth/default/$1.php [L,QSA]
-RewriteRule ^actions(/.*)?$ /legacy/lib/actions/$1.php [L]
-RewriteRule ^bookings/csv$ /legacy/lib/csv.php [L]
-RewriteRule ^google/callback$ /legacy/lib/auth/google/callback.php [L,QSA]
-RewriteRule ^spotify(/.*)?$ /legacy/lib/auth/spotify/$1.php [L]
+# Route to events app
+RewriteRule ^account(/.*)?$ /events/index.php?page_name=account$1 [L,QSA]
+RewriteRule ^planner(/.*)?$ /events/index.php?auth=user&page_name=planner$1 [L,QSA]
+RewriteRule ^admin(/.*)?$ /events/index.php?auth=admin&page_name=admin$1 [L,QSA]
+RewriteRule ^auth/revoke$ /events/lib/auth/revoke.php [L,QSA]
+RewriteRule ^auth(/.*)?$ /events/lib/auth/default/$1.php [L,QSA]
+RewriteRule ^actions(/.*)?$ /events/lib/actions/$1.php [L]
+RewriteRule ^bookings/csv$ /events/lib/csv.php [L]
+RewriteRule ^google/callback$ /events/lib/auth/google/callback.php [L,QSA]
+RewriteRule ^spotify(/.*)?$ /events/lib/auth/spotify/$1.php [L]
 
-# Exclude legacy folder
-RewriteRule ^legacy(/.*)?$ - [L]
+# Exclude events folder
+RewriteRule ^events(/.*)?$ - [L]
 
 # Standard WordPress rewrite
 RewriteCond %{REQUEST_FILENAME} !-f
