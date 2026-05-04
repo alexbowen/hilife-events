@@ -5,7 +5,7 @@ body {
 
 main {
   min-height: 100vh;
-  padding-top: 6em;
+  padding-top: 8em;
 }
 
 @media print {
@@ -542,68 +542,6 @@ header {
   font-size: 0.9em;
 }
 
-.footer-enquiries {
-  width: 100%;
-  color: #CCCCCC;
-  line-height: 1.8em;
-}
-
-.footer-enquiries a {
-  color: #CCCCCC;
-}
-
-.footer-links {
-  list-style-type: none;
-  display: flex;
-  align-self: center;
-  margin-bottom: 0;
-}
-
-.footer-links li {
-  flex-grow: 1;
-  align-self: center;
-  line-height: 2em;
-  background-position: left 0px top 0px;
-  text-align: center;
-}
-
-.footer-links.social {
-  order: 2;
-}
-
-.footer-links.region {
-  padding: 0;
-}
-
-.footer-links.social li {
-  margin: 0 0.5em;
-}
-
-.footer-links li a {
-  display: inline-block;
-  text-align: center;
-}
-
-.footer-links li a span {
-  display: block;
-  line-height: 1em;
-}
-
-.footer-fade {
-  height: 4px;
-  width: 100%;
-  background: linear-gradient(
-    to top,
-    #212529,
-    rgba(255, 0, 0, 0)
-  );
-}
-
-.footer-content {
-  padding: 16px 20px;
-  display: flex;
-}
-
 .spotify {
   background-color: #1db954;
   color: #ffffff;
@@ -621,27 +559,9 @@ header {
   color: #ffffff;
 }
 
-footer {
-  color: #FFFFFF;
-  font-size: 0.8em;
-}
 
-@media only screen and (min-width: 900px) {
-  footer {
-    position: sticky;
-    bottom: 0; 
-  }
-}
 
-footer span {
-  margin: 0;
-  color: #CCCCCC;
-  display: block;
-}
 
-.footer-enquiries {
-  order: 1;
-}
 
 .my-gallery {
   width: 100%;

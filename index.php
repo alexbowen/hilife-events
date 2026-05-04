@@ -5,7 +5,7 @@ session_start();
 // include(APP_ROOT . '/lib/common.php');
 include (APP_ROOT . '/lib/auth.php');
 
-
+define('WP_BASE_URL', 'http://localhost:10006'); // local
 ?>
 
 <!DOCTYPE html>
@@ -15,6 +15,9 @@ include (APP_ROOT . '/lib/auth.php');
     <?php include ('templates/head/meta.php'); ?>
     <?php include ('templates/head/scripts.php'); ?>
     <?php include ('templates/head/links.php'); ?>
+    <link rel="stylesheet" href="<?php echo WP_BASE_URL; ?>/wp-content/themes/twentytwentyfive/assets/css/hilife-header.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lekton:wght@700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
   </head>
 
   <body>
