@@ -1,4 +1,4 @@
-# Dependencies
+# Dependencies — install via composer/npm on each environment
 vendor/
 node_modules/
 

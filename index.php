@@ -2,10 +2,7 @@
 require_once __DIR__ . '/bootstrap.php';
 define('ASSETS_URL', '/events/assets/production/');
 session_start();
-// include(APP_ROOT . '/lib/common.php');
 include (APP_ROOT . '/lib/auth.php');
-
-define('WP_BASE_URL', 'http://localhost:10006'); // local
 ?>
 
 <!DOCTYPE html>
