@@ -1,5 +1,8 @@
 <?php
+define('APP_ROOT', '../../');
 session_start();
+   // app constants
+
 include(APP_ROOT . '/lib/auth/session.php');
 include(APP_ROOT . '/lib/common.php');
 include (APP_ROOT . '/lib/validations/event.php');
