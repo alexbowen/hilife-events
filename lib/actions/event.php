@@ -1,10 +1,9 @@
 <?php
-define('APP_ROOT', '../../');
+require_once __DIR__ . '/../../bootstrap.php';
 session_start();
    // app constants
 
 include(APP_ROOT . '/lib/auth/session.php');
-include(APP_ROOT . '/lib/common.php');
 include (APP_ROOT . '/lib/validations/event.php');
 include (APP_ROOT . '/config/event.php');
 include (APP_ROOT . '/lib/email.php');
