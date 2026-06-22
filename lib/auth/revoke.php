@@ -1,7 +1,6 @@
 <?php
 require_once __DIR__ . '/../../bootstrap.php';
 include(APP_ROOT . '/lib/auth/session.php');
-// include(APP_ROOT . '/lib/common.php');
 include (APP_ROOT . '/lib/notify.php');
 
 require APP_ROOT.'/vendor/autoload.php';

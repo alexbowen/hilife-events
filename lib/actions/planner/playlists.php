@@ -1,6 +1,6 @@
 <?php
+require_once __DIR__ . '/../../../bootstrap.php';
 session_start();
-include(APP_ROOT . '/lib/common.php');
   
 if (isset($_POST['action']) && $_POST['action'] == 'update') {
     $insertFields = '';

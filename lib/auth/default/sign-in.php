@@ -1,6 +1,5 @@
 <?php
 require_once __DIR__ . '/../../../bootstrap.php';
-// include(APP_ROOT . '/lib/common.php');
 include_once (APP_ROOT . '/lib/notify.php');
 
 if ($_POST['action'] == 'sign-in') {
