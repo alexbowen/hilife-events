@@ -28,4 +28,28 @@ echo $wp_header['html'] ?? '';
         <a href="/auth/revoke" style="font-size:0.65rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--text-dim);text-decoration:none;margin-left:auto;">Sign out</a>
     </div>
 </div>
+
+
+
 <?php endif; ?>
+
+<script>
+(function() {
+    var hamburger = document.getElementById('hilife-hamburger');
+    var nav = document.getElementById('hilife-nav');
+
+    
+
+    if (!hamburger || !nav) return;
+    hamburger.addEventListener('click', function() {
+        hamburger.classList.toggle('is-active');
+        nav.classList.toggle('is-open');
+    });
+    document.addEventListener('click', function(e) {
+        if (!hamburger.contains(e.target) && !nav.contains(e.target)) {
+            hamburger.classList.remove('is-active');
+            nav.classList.remove('is-open');
+        }
+    });
+})();
+</script>
